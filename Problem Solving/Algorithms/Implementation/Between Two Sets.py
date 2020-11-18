@@ -1,3 +1,20 @@
+""" problem statement - https://www.hackerrank.com/challenges/between-two-sets/problem """
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'getTotalX' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts following parameters:
+#  1. INTEGER_ARRAY a
+#  2. INTEGER_ARRAY b
+#
+
+
 def getTotalX(a, b):
     count = 0
     maxA = max(a)
@@ -8,7 +25,8 @@ def getTotalX(a, b):
         right = all([numB % num == 0 for numB in b])
         count += left * right
 
-    print(count)
+    return count
+
 
 if __name__ == '__main__':
 

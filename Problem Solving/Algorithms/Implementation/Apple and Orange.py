@@ -1,4 +1,15 @@
+""" problem statement - https://www.hackerrank.com/challenges/apple-and-orange/problem """
+import math
+import os
+import random
+import re
+import sys
+
+
+# Complete the countApplesAndOranges function below.
+# two solutions
 def countApplesAndOranges(s, t, a, b, apples, oranges):
+    """ first - did not execute within the time limits """
     # house = [x for x in range(s, t+1)]
     # apple = [a + app for app in apples]
     # orange = [b + orr for orr in oranges]
@@ -13,12 +24,10 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
     #     if orr in house:
     #         orange_count += 1
     #
-    # print(house)
-    # print(apple)
-    # print(orange)
     # print(apple_count)
     # print(orange_count)
 
+    """ second """
     print(sum(1 for app in apples if s <= (app + a) <= t))
     print(sum(1 for orr in oranges if s <= (orr + b) <= t))
 

@@ -1,4 +1,16 @@
+""" problem statement - https://www.hackerrank.com/challenges/plus-minus/problem """
+
+import math
+import os
+import random
+import re
+import sys
+
+
+# two solutions
 def plusMinus(arr):
+    # first
+
     # negative = []
     # positie = []
     # zero = []
@@ -18,10 +30,10 @@ def plusMinus(arr):
     # print(negative_ratio)
     # print(zero_ratio)
 
-    print(format(len([x for x in arr if x > 0])/len(arr), ".6f"))
-    print(format(len([x for x in arr if x < 0])/len(arr), ".6f"))
-    print(format(len([x for x in arr if x == 0])/len(arr), ".6f"))
-
+    # second
+    print(format(len([x for x in arr if x > 0]) / len(arr), ".6f"))
+    print(format(len([x for x in arr if x < 0]) / len(arr), ".6f"))
+    print(format(len([x for x in arr if x == 0]) / len(arr), ".6f"))
 
 
 if __name__ == '__main__':
